@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guru Computer Education Institute</title>
+    <meta name="description" content="Guru Computer Education Institute, Bilha, Bilaspur (C.G.) – Since 2015. Basic Computer, MS Office, Tally, DCA, PGDCA, Typing, Photoshop, Canva, AI ChatGPT और अन्य प्रोफेशनल कंप्यूटर कोर्स।">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', 'Nirmala UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', 'Arial', sans-serif;
         }
 
         body {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: linear-gradient(135deg, #0a3d62 0%, #1e5799 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -23,284 +24,943 @@
         }
 
         .visiting-card {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
             width: 100%;
             max-width: 420px;
+            background: #ffffff;
+            border-radius: 24px;
             overflow: hidden;
-            text-align: center;
-            transition: transform 0.3s ease;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
         }
 
-        .visiting-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            padding: 30px 20px;
+        /* ===== HEADER SECTION ===== */
+        .header-section {
+            background: linear-gradient(135deg, #00695c 0%, #004d40 100%);
+            padding: 30px 25px 20px;
             color: white;
+            text-align: center;
         }
 
         .institute-name {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 5px;
-            line-height: 1.3;
-        }
-
-        .institute-line1 {
-            font-size: 26px;
-            font-weight: bold;
-            display: block;
-        }
-
-        .institute-line2 {
-            font-size: 22px;
-            font-weight: bold;
-            display: block;
-            margin-top: 2px;
-        }
-
-        .tagline {
-            font-size: 16px;
-            opacity: 0.95;
-            margin-top: 10px;
-            font-weight: 600;
-        }
-
-        .content {
-            padding: 25px;
-        }
-
-        .address {
-            color: #333;
-            margin-bottom: 20px;
-            line-height: 1.5;
-            font-size: 14px;
-        }
-
-        .contact-info {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        .phone {
-            font-size: 18px;
-            font-weight: bold;
-            color: #1e3c72;
             margin-bottom: 10px;
         }
 
-        .courses {
-            text-align: center;
-            margin-bottom: 25px;
+        .name-guru {
+            font-size: 32px;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: 1px;
+            display: block;
+            line-height: 1.1;
         }
 
-        .courses-title {
-            font-weight: bold;
-            color: #1e3c72;
-            margin-bottom: 15px;
-            font-size: 18px;
+        .name-education {
+            font-size: 20px;
+            font-weight: 600;
+            color: #b2dfdb;
+            display: block;
+            margin-top: 5px;
+            letter-spacing: 0.5px;
         }
 
-        .course-list {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
+        /* NEW: Tagline Style */
+        .tagline {
+            font-size: 15px;
+            font-weight: 600;
+            color: #FFD700;
+            margin: 8px 0 15px 0;
+            font-style: italic;
+            letter-spacing: 0.3px;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            padding: 0 10px;
+            line-height: 1.3;
+        }
+
+        /* Experience Badge */
+        .experience-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            color: #333333;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-top: 12px;
+            border: none;
+            box-shadow: 0 3px 8px rgba(255, 165, 0, 0.3);
+        }
+
+        /* Preview Note */
+        .preview-note {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px dashed rgba(255, 255, 255, 0.3);
+            padding: 10px 12px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #b2dfdb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            backdrop-filter: blur(5px);
+        }
+
+        .preview-note i {
             font-size: 14px;
         }
 
-        .course-item {
-            background: #f0f5ff;
-            padding: 10px;
-            border-radius: 8px;
-            text-align: center;
-            font-weight: 500;
+        /* ===== OWNER SECTION ===== */
+        .owner-section {
+            padding: 20px;
+            background: #ffffff;
         }
 
-        .motto {
-            font-style: italic;
-            color: #666;
-            margin-bottom: 25px;
-            padding: 12px;
-            background: #fff9e6;
-            border-radius: 10px;
-            border-left: 4px solid #ffc107;
-            font-size: 16px;
+        .founder-card {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 18px;
+            background: #f1f8e9;
+            border-radius: 14px;
+            border: 2px solid #c5e1a5;
+            margin-bottom: 15px;
+        }
+
+        .founder-avatar {
+            width: 60px;
+            height: 60px;
+            background: #00796b;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
             font-weight: bold;
+            border: 3px solid white;
+            box-shadow: 0 0 0 2px #00796b;
+            flex-shrink: 0;
         }
 
-        .links {
+        .founder-details {
+            flex: 1;
+        }
+
+        .founder-name {
+            font-size: 18px;
+            font-weight: 700;
+            color: #004d40;
+            margin-bottom: 5px;
+        }
+
+        .founder-position {
+            font-size: 14px;
+            font-weight: 600;
+            color: #00796b;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* SMALLER Action Buttons */
+        .action-buttons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin: 15px 0 20px 0;
+        }
+
+        .action-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            padding: 8px 4px;
+            border-radius: 8px;
+            background: #e8f5e9;
+            color: #004d40;
+            font-weight: 600;
+            font-size: 11px;
+            border: 1.5px solid #00796b;
+            transition: all 0.3s ease;
+            text-align: center;
+            height: 60px;
+        }
+
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 121, 107, 0.2);
+        }
+
+        .action-btn i {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #00796b;
+        }
+
+        .chat-btn:hover {
+            background: #10a37f;
+            color: white;
+            border-color: #10a37f;
+        }
+
+        .chat-btn:hover i {
+            color: white;
+        }
+
+        .contact-btn:hover {
+            background: #00796b;
+            color: white;
+            border-color: #00796b;
+        }
+
+        .contact-btn:hover i {
+            color: white;
+        }
+
+        .share-btn:hover {
+            background: #6c5ce7;
+            color: white;
+            border-color: #6c5ce7;
+        }
+
+        .share-btn:hover i {
+            color: white;
+        }
+
+        .team-section {
+            margin-top: 20px;
+        }
+
+        .team-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #004d40;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .team-members {
             display: flex;
             flex-direction: column;
             gap: 12px;
         }
 
-        .link-btn {
+        .team-member {
+            padding: 15px;
+            background: #e8f5e9;
+            border-radius: 12px;
+            border: 2px solid #a5d6a7;
+        }
+
+        .member-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .member-avatar {
+            width: 48px;
+            height: 48px;
+            background: #388e3c;
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 12px 20px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            border: 2px solid;
-            background: white;
-        }
-
-        .link-btn:hover {
-            transform: scale(1.02);
             color: white;
-        }
-
-        .link-btn i {
-            margin-right: 10px;
             font-size: 18px;
-        }
-
-        .facebook { border-color: #1877F2; color: #1877F2; }
-        .facebook:hover { background: #1877F2; }
-
-        .instagram { border-color: #E4405F; color: #E4405F; }
-        .instagram:hover { background: #E4405F; }
-
-        .youtube { border-color: #FF0000; color: #FF0000; }
-        .youtube:hover { background: #FF0000; }
-
-        .chatgpt { border-color: #10a37f; color: #10a37f; }
-        .chatgpt:hover { background: #10a37f; }
-
-        .justdial { border-color: #FF6B00; color: #FF6B00; }
-        .justdial:hover { background: #FF6B00; }
-
-        .whatsapp { border-color: #25D366; color: #25D366; }
-        .whatsapp:hover { background: #25D366; }
-
-        .phone-btn { border-color: #1e3c72; color: #1e3c72; }
-        .phone-btn:hover { background: #1e3c72; }
-
-        .location-btn { border-color: #34A853; color: #34A853; }
-        .location-btn:hover { background: #34A853; }
-
-        .footer {
-            padding: 15px;
-            background: #1e3c72;
-            color: white;
-            font-size: 14px;
             font-weight: bold;
+            flex-shrink: 0;
+            border: 2px solid white;
+            box-shadow: 0 0 0 2px #388e3c;
         }
 
-        .email-link {
+        .member-details {
+            flex: 1;
+        }
+
+        .member-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #004d40;
+            margin-bottom: 4px;
+        }
+
+        .member-role {
+            font-size: 13px;
+            color: #00796b;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .call-button-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* SMALLER Call Button */
+        .call-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 10px 18px;
+            background: #00796b;
             color: white;
             text-decoration: none;
-            display: block;
-            margin-top: 5px;
-            font-size: 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1.5px solid #00796b;
+            width: fit-content;
+        }
+
+        .call-button:hover {
+            background: white;
+            color: #00796b;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 121, 107, 0.2);
+        }
+
+        .call-button i {
+            font-size: 14px;
+        }
+
+        /* ===== COURSES SECTION ===== */
+        .courses-section {
+            padding: 25px 20px;
+            background: #f8f9fa;
+            border-top: 2px solid #e0f2f1;
+            border-bottom: 2px solid #e0f2f1;
+        }
+
+        .courses-title-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .courses-main-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #004d40;
+            margin-bottom: 6px;
+        }
+
+        .courses-sub-title {
+            font-size: 14px;
+            color: #00695c;
+            font-weight: 500;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        /* SMALLER Course Items */
+        .course-item {
+            background: #e8f5e9;
+            color: #004d40;
+            padding: 12px 8px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            text-align: center;
+            border: 1.5px solid #00796b;
+            cursor: default;
+            transition: all 0.3s ease;
+        }
+
+        .course-item:hover {
+            background: #00796b;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 121, 107, 0.2);
+        }
+
+        /* ===== CONNECT SECTION ===== */
+        .connect-section {
+            padding: 25px 20px;
+            background: #ffffff;
+        }
+
+        .connect-title-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .connect-main-title {
+            font-size: 17px;
+            font-weight: 700;
+            color: #004d40;
+            margin-bottom: 6px;
+        }
+
+        .connect-sub-title {
+            font-size: 13px;
+            color: #00695c;
+            font-weight: 500;
+        }
+
+        /* UPDATED: 2 lines with 3 items each */
+        .social-icons-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        /* SMALLER Social Items */
+        .social-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            padding: 12px 6px;
+            border-radius: 10px;
+            background: #e8f5e9;
+            border: 1.5px solid #00796b;
+            transition: all 0.3s ease;
+        }
+
+        .social-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 10px rgba(0, 121, 107, 0.2);
+        }
+
+        .social-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .social-text {
+            font-size: 11px;
+            font-weight: 600;
+            color: #004d40;
+            text-align: center;
+        }
+
+        .facebook-bg { background: #1877F2; }
+        .instagram-bg { background: #E4405F; }
+        .whatsapp-bg { background: #25D366; }
+        .youtube-bg { background: #FF0000; }
+        .location-bg { background: #34A853; }
+        .justdial-bg { background: #FF6B00; }
+
+        /* ===== ADDRESS SECTION ===== */
+        .address-section {
+            padding: 25px 20px;
+            background: #f8f9fa;
+            border-top: 2px solid #e0f2f1;
+        }
+
+        .address-card {
+            background: #f1f8e9;
+            border-radius: 14px;
+            padding: 20px;
+            border: 2px solid #c5e1a5;
+        }
+
+        .card-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #c5e1a5;
+        }
+
+        .card-title i {
+            color: #00796b;
+            font-size: 20px;
+        }
+
+        .card-title-text {
+            font-size: 18px;
+            font-weight: 700;
+            color: #00796b;
+        }
+
+        .address-details {
+            line-height: 1.5;
+        }
+
+        .address-line {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #333333;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .address-line i {
+            color: #00796b;
+            margin-top: 2px;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        /* ===== FOOTER ===== */
+        .card-footer {
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #00695c 0%, #004d40 100%);
+            color: white;
+        }
+
+        .footer-text {
+            margin-bottom: 12px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #b2dfdb;
+        }
+
+        /* SMALLER Email Link */
+        .email-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s;
+            border: 1.5px solid rgba(178, 223, 219, 0.3);
+            max-width: 100%;
         }
 
         .email-link:hover {
-            text-decoration: underline;
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .email-link i {
+            font-size: 14px;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 480px) {
+            .visiting-card {
+                max-width: 380px;
+            }
+            
+            .header-section {
+                padding: 25px 18px 18px;
+            }
+            
+            .name-guru {
+                font-size: 30px;
+            }
+            
+            .name-education {
+                font-size: 18px;
+            }
+            
+            .tagline {
+                font-size: 14px;
+                margin: 6px 0 12px 0;
+            }
+            
+            .owner-section,
+            .courses-section,
+            .connect-section,
+            .address-section {
+                padding: 18px;
+            }
+            
+            .courses-grid,
+            .social-icons-grid {
+                gap: 8px;
+            }
+            
+            .course-item,
+            .social-item {
+                padding: 10px 6px;
+            }
+            
+            .action-btn {
+                padding: 6px 3px;
+                font-size: 10px;
+                height: 55px;
+            }
+            
+            .action-btn i {
+                font-size: 14px;
+            }
+            
+            .experience-badge {
+                font-size: 12px;
+                padding: 8px 16px;
+            }
+            
+            .call-button {
+                padding: 8px 15px;
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .visiting-card {
+                max-width: 340px;
+            }
+            
+            .courses-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .social-icons-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .action-buttons {
+                grid-template-columns: 1fr;
+                gap: 6px;
+            }
+            
+            .action-btn {
+                padding: 8px;
+                height: 50px;
+            }
+            
+            .experience-badge {
+                font-size: 11px;
+                padding: 7px 14px;
+            }
+            
+            .call-button {
+                padding: 7px 12px;
+                font-size: 11px;
+            }
+            
+            .email-link {
+                padding: 10px 16px;
+                font-size: 13px;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- VISITING CARD -->
     <div class="visiting-card">
-        <div class="header">
-            <h1 class="institute-name">
-                <span class="institute-line1">Guru Computer</span>
-                <span class="institute-line2">Education Institute</span>
-            </h1>
-            <p class="tagline">Trusted Computer Training Centre (Since 2015)</p>
-        </div>
         
-        <div class="content">
-            <div class="address">
-                <strong>Address:</strong><br>
-                Near Police Station, Dagori Road<br>
-                Bilha, Bilaspur (C.G.) 495224
-            </div>
-
-            <div class="contact-info">
-                <div class="phone">
-                    <i class="fas fa-phone"></i> 9244240484
-                </div>
-            </div>
-
-            <div class="motto">
-                "Guru ke Saath Gyan"
-            </div>
-
-            <div class="courses">
-                <div class="courses-title">Our Courses</div>
-                <div class="course-list">
-                    <div class="course-item">DCA</div>
-                    <div class="course-item">Tally</div>
-                    <div class="course-item">Typing</div>
-                    <div class="course-item">MS Office</div>
-                    <div class="course-item">Photoshop</div>
-                    <div class="course-item">Advanced Courses</div>
-                </div>
+        <!-- HEADER SECTION -->
+        <header class="header-section">
+            <div class="institute-name">
+                <span class="name-guru">Guru Computer</span>
+                <span class="name-education">Education Institute</span>
             </div>
             
-            <div class="links">
-                <a href="https://www.facebook.com/gceiofficial/" class="link-btn facebook" target="_blank">
-                    <i class="fab fa-facebook"></i> Facebook
-                </a>
-                
-                <a href="https://www.instagram.com/gceiofficial/" class="link-btn instagram" target="_blank">
-                    <i class="fab fa-instagram"></i> Instagram
-                </a>
-                
-                <a href="https://www.youtube.com/channel/UCebEVcrSsWWxWr2qVGRLk6w" class="link-btn youtube" target="_blank">
-                    <i class="fab fa-youtube"></i> YouTube
-                </a>
-
-                <a href="https://chatgpt.com/g/g-6926bc68578481918c98db2ce250c035-guru-computer-vani-assistant" class="link-btn chatgpt" target="_blank">
-                    <i class="fas fa-robot"></i> Vani Assistant
-                </a>
-                
-                <a href="https://jsdl.in/DT-99QYUEQ2AEE" class="link-btn justdial" target="_blank">
-                    <i class="fas fa-star"></i> JustDial
-                </a>
-                
-                <a href="https://wa.me/919244240484" class="link-btn whatsapp" target="_blank">
-                    <i class="fab fa-whatsapp"></i> WhatsApp
-                </a>
-                
-                <a href="tel:9244240484" class="link-btn phone-btn">
-                    <i class="fas fa-phone"></i> Call Now
-                </a>
-                
-                <a href="https://maps.app.goo.gl/sYdLaS4EFBz9a4go6" class="link-btn location-btn" target="_blank">
-                    <i class="fas fa-map-marker-alt"></i> Location
-                </a>
+            <!-- NEW: Tagline Added Here -->
+            <div class="tagline">
+                Guru Ke Saath Gyan, Safalta Ki Pehchan
             </div>
-        </div>
-        
-        <div class="footer">
-            For Admissions & Inquiries
+            
+            <!-- Experience Badge -->
+            <div class="experience-badge">
+                <i class="fas fa-medal"></i>
+                Trusted Computer Training Centre Since 2015
+            </div>
+            
+            <!-- Info Note -->
+            <div class="preview-note">
+                <i class="fas fa-info-circle"></i>
+                Digital Visiting Card – नीचे पूरी जानकारी देखें
+            </div>
+        </header>
+
+        <main>
+            <!-- OWNER SECTION -->
+            <section class="owner-section">
+                <!-- Founder Card -->
+                <div class="founder-card">
+                    <div class="founder-avatar">NJ</div>
+                    <div class="founder-details">
+                        <div class="founder-name">Nisha Jangde</div>
+                        <div class="founder-position">
+                            <i class="fas fa-crown"></i>
+                            Founder &amp; Director
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <a href="https://chatgpt.com/g/g-6926bc68578481918c98db2ce250c035-guru-computer-vani-assistant" 
+                    class="action-btn chat-btn" target="_blank">
+                        <i class="fas fa-robot"></i>
+                        Chat AI
+                    </a>
+                    
+                    <a href="tel:9244240484" class="action-btn contact-btn">
+                        <i class="fas fa-phone"></i>
+                        Call
+                    </a>
+                    
+                    <a href="#" class="action-btn share-btn" id="shareBtn">
+                        <i class="fas fa-share-alt"></i>
+                        Share
+                    </a>
+                </div>
+
+                <!-- Team Members -->
+                <div class="team-section">
+                    <div class="team-title">
+                        <i class="fas fa-users"></i>
+                        Management Team (प्रबंधन टीम)
+                    </div>
+                    <div class="team-members">
+                        <!-- Centre Head -->
+                        <div class="team-member">
+                            <div class="member-header">
+                                <div class="member-avatar">SJ</div>
+                                <div class="member-details">
+                                    <div class="member-name">Sandeep Jangde</div>
+                                    <div class="member-role">
+                                        <i class="fas fa-user-tie"></i>
+                                        Centre Head
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="call-button-container">
+                                <a href="tel:8349902843" class="call-button">
+                                    <i class="fas fa-phone-alt"></i>
+                                    Call: 8349902843
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Operations Manager -->
+                        <div class="team-member">
+                            <div class="member-header">
+                                <div class="member-avatar">DJ</div>
+                                <div class="member-details">
+                                    <div class="member-name">Dheeraj Jangde</div>
+                                    <div class="member-role">
+                                        <i class="fas fa-briefcase"></i>
+                                        Operations Manager &amp; Counselor
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="call-button-container">
+                                <a href="tel:9343225522" class="call-button">
+                                    <i class="fas fa-phone-alt"></i>
+                                    Call: 9343225522
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- COURSES SECTION -->
+            <section class="courses-section">
+                <div class="courses-title-section">
+                    <div class="courses-main-title">Our Courses (हमारे कोर्स)</div>
+                    <div class="courses-sub-title">
+                        Professional Computer Training / प्रोफेशनल कंप्यूटर ट्रेनिंग
+                    </div>
+                </div>
+
+                <div class="courses-grid">
+                    <div class="course-item">Basic Computer</div>
+                    <div class="course-item">MS Office</div>
+                    <div class="course-item">Typing (English/Hindi)</div>
+                    <div class="course-item">Internet &amp; Email</div>
+                    <div class="course-item">Tally Prime GST</div>
+                    <div class="course-item">CCC Course</div>
+                    <div class="course-item">DCA Course</div>
+                    <div class="course-item">PGDCA Course</div>
+                    <div class="course-item">Photoshop</div>
+                    <div class="course-item">Canva Design</div>
+                    <div class="course-item">AI ChatGPT</div>
+                </div>
+            </section>
+
+            <!-- CONNECT SECTION -->
+            <section class="connect-section">
+                <div class="connect-title-section">
+                    <div class="connect-main-title">Connect With Us (हमसे जुड़ें)</div>
+                    <div class="connect-sub-title">
+                        Follow us on social media / सोशल मीडिया पर जुड़ें
+                    </div>
+                </div>
+
+                <div class="social-icons-grid">
+                    <!-- First Line: 3 Items -->
+                    <a href="https://www.facebook.com/gceiofficial/" class="social-item" target="_blank">
+                        <div class="social-icon facebook-bg">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="social-text">Facebook</div>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/gceiofficial/" class="social-item" target="_blank">
+                        <div class="social-icon instagram-bg">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="social-text">Instagram</div>
+                    </a>
+                    
+                    <a href="https://wa.me/919244240484" class="social-item" target="_blank">
+                        <div class="social-icon whatsapp-bg">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="social-text">WhatsApp</div>
+                    </a>
+                    
+                    <!-- Second Line: 3 Items -->
+                    <a href="https://www.youtube.com/channel/UCebEVcrSsWWxWr2qVGRLk6w" class="social-item" target="_blank">
+                        <div class="social-icon youtube-bg">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="social-text">YouTube</div>
+                    </a>
+                    
+                    <a href="https://maps.app.goo.gl/sYdLaS4EFBz9a4go6" class="social-item" target="_blank">
+                        <div class="social-icon location-bg">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="social-text">Location</div>
+                    </a>
+                    
+                    <a href="https://jsdl.in/DT-99QYUEQ2AEE" class="social-item" target="_blank">
+                        <div class="social-icon justdial-bg">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="social-text">JustDial</div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- ADDRESS SECTION -->
+            <section class="address-section">
+                <div class="address-card">
+                    <div class="card-title">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="card-title-text">Institute Address (संस्थान का पता)</div>
+                    </div>
+                    <div class="address-details">
+                        <div class="address-line">
+                            <i class="fas fa-building"></i>
+                            <span>Near Police Station, Dagori Road</span>
+                        </div>
+                        <div class="address-line">
+                            <i class="fas fa-map-pin"></i>
+                            <span>Bilha, Bilaspur (Chhattisgarh)</span>
+                        </div>
+                        <div class="address-line">
+                            <i class="fas fa-mail-bulk"></i>
+                            <span>PIN Code: 495224</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="card-footer">
+            <div class="footer-text">
+                For Admissions &amp; Inquiries (प्रवेश एवं जानकारी के लिए)
+            </div>
             <a href="mailto:info.gceiofficial@gmail.com" class="email-link">
+                <i class="fas fa-envelope"></i>
                 info.gceiofficial@gmail.com
             </a>
-        </div>
+        </footer>
     </div>
 
     <script>
+        // Page Load Animation
         document.addEventListener('DOMContentLoaded', function() {
+            // Card entrance animation
             const card = document.querySelector('.visiting-card');
             card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
+            card.style.transform = 'translateY(30px)';
             
             setTimeout(() => {
-                card.style.transition = 'all 0.5s ease';
+                card.style.transition = 'all 0.6s ease';
                 card.style.opacity = '1';
                 card.style.transform = 'translateY(0)';
             }, 100);
+
+            // Share Button Functionality
+            const shareBtn = document.getElementById('shareBtn');
+            shareBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const shareData = {
+                    title: 'Guru Computer Education Institute',
+                    text: `🎓 GURU COMPUTER EDUCATION INSTITUTE – Bilha, Bilaspur (C.G.)\n\n🎯 Tagline: Guru Ke Saath Gyan, Safalta Ki Pehchan\n👩‍💼 Founder & Director: Nisha Jangde\n🎯 Trusted Computer Training Centre Since 2015\n\n📱 Main Contact: 92442 40484\n📍 Near Police Station, Dagori Road, Bilha, Bilaspur (C.G.)\n\nCourses: Basic Computer, MS Office, Typing, Internet & Email, Tally Prime GST, DCA, PGDCA, Photoshop, Canva Design, AI ChatGPT.\n\n📲 Admission ke liye call ya WhatsApp karein.\n`,
+                    url: window.location.href
+                };
+
+                if (navigator.share) {
+                    navigator.share(shareData)
+                        .then(() => console.log('Card shared successfully'))
+                        .catch(err => console.log('Error sharing:', err));
+                } else {
+                    const cardInfo = `GURU COMPUTER EDUCATION INSTITUTE
+(Bilha, Bilaspur, Chhattisgarh)
+
+🎯 Tagline: Guru Ke Saath Gyan, Safalta Ki Pehchan
+👩‍💼 Founder & Director: Nisha Jangde
+🎯 Trusted Computer Training Centre Since 2015
+
+📞 Main Contact: 92442 40484
+📍 Address: Near Police Station, Dagori Road, Bilha, Bilaspur (C.G.)
+📧 Email: info.gceiofficial@gmail.com
+
+Management Team:
+• Sandeep Jangde (Centre Head): 8349902843
+• Dheeraj Jangde (Operations & Counselor): 9343225522
+
+Our Courses:
+• Basic Computer • MS Office • Typing (English/Hindi)
+• Internet & Email • Tally Prime GST
+• CCC • DCA • PGDCA
+• Photoshop • Canva Design • AI ChatGPT
+
+Connect with us:
+Facebook: https://www.facebook.com/gceiofficial/
+Instagram: https://www.instagram.com/gceiofficial/
+YouTube: https://www.youtube.com/channel/UCebEVcrSsWWxWr2qVGRLk6w
+WhatsApp: https://wa.me/919244240484
+Location: https://maps.app.goo.gl/sYdLaS4EFBz9a4go6
+JustDial: https://jsdl.in/DT-99QYUEQ2AEE`;
+
+                    navigator.clipboard.writeText(cardInfo)
+                        .then(() => {
+                            alert('✅ Contact information clipboard me copy ho gayi hai.\n\nAb aap ise kahin bhi paste karke share kar sakte hain.');
+                        })
+                        .catch(err => {
+                            console.error('Failed to copy: ', err);
+                            prompt('📋 Copy this text to share:', cardInfo);
+                        });
+                }
+            });
         });
     </script>
 </body>
