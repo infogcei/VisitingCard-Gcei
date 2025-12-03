@@ -219,7 +219,7 @@
             color: white;
         }
 
-        /* NEW: Admission Form Button Styles */
+        /* NEW: Admission Info Button Styles */
         .admission-btn:hover {
             background: #ff5722;
             color: white;
@@ -557,7 +557,7 @@
             font-size: 14px;
         }
 
-        /* ===== ADMISSION FORM MODAL ===== */
+        /* ===== ADMISSION INFO MODAL ===== */
         .modal-overlay {
             display: none;
             position: fixed;
@@ -870,7 +870,7 @@
                     </div>
                 </div>
 
-                <!-- UPDATED: 4 Action Buttons including Admission Form -->
+                <!-- UPDATED: 4 Action Buttons including Admission Info -->
                 <div class="action-buttons">
                     <a href="https://chatgpt.com/g/g-6926bc68578481918c98db2ce250c035-guru-computer-vani-assistant" 
                     class="action-btn chat-btn" target="_blank">
@@ -885,7 +885,7 @@
                     
                     <a href="#" class="action-btn admission-btn" id="admissionBtn">
                         <i class="fas fa-file-alt"></i>
-                        Admission Form
+                        Admission Info
                     </a>
                     
                     <a href="#" class="action-btn share-btn" id="shareBtn">
@@ -1057,12 +1057,12 @@
         </footer>
     </div>
 
-    <!-- ADMISSION FORM MODAL -->
+    <!-- ADMISSION Info MODAL -->
     <div class="modal-overlay" id="admissionModal">
         <div class="modal-content">
             <div class="modal-header">
                 <button class="close-modal" id="closeModal">&times;</button>
-                <div class="modal-title">📝 Admission Form</div>
+                <div class="modal-title">📝 Admission Info</div>
                 <div class="modal-subtitle">Guru Computer Education Institute</div>
             </div>
             
@@ -1114,7 +1114,7 @@
                     
                     <button type="submit" class="submit-btn">
                         <i class="fas fa-paper-plane"></i>
-                        Submit Admission Form
+                        Submit Admission Info
                     </button>
                     
                     <div class="form-note">
@@ -1139,7 +1139,7 @@
                 card.style.transform = 'translateY(0)';
             }, 100);
 
-            // Admission Form Modal
+            // Admission Info Modal
             const admissionBtn = document.getElementById('admissionBtn');
             const admissionModal = document.getElementById('admissionModal');
             const closeModal = document.getElementById('closeModal');
@@ -1175,7 +1175,7 @@
                 const formObject = Object.fromEntries(formData.entries());
                 
                 // Create WhatsApp message
-                const whatsappMessage = `🎓 *NEW ADMISSION FORM SUBMISSION* 🎓
+                const whatsappMessage = `🎓 *NEW ADMISSION INFO SUBMISSION* 🎓
 
 *Name:* ${formObject.full_name}
 *Mobile:* ${formObject.mobile}
@@ -1201,7 +1201,7 @@
                 document.body.style.overflow = 'auto';
                 
                 // Show success message
-                alert('✅ Admission form submitted successfully!\n\nYou will be redirected to WhatsApp to complete the process.');
+                alert('✅ Admission Info submitted successfully!\n\nYou will be redirected to WhatsApp to complete the process.');
             });
 
             // Share Button Functionality
@@ -1211,7 +1211,7 @@
                 
                 const shareData = {
                     title: 'Guru Computer Education Institute',
-                    text: `🎓 GURU COMPUTER EDUCATION INSTITUTE – Bilha, Bilaspur (C.G.)\n\n👩‍💼 Founder & Director: Nisha Jangde\n🎯 Trusted Computer Training Centre Since 2015\n\n📱 Main Contact: 92442 40484\n📍 Near Police Station, Dagori Road, Bilha, Bilaspur (C.G.)\n\nCourses: Basic Computer, MS Office, Typing, Internet & Email, Tally Prime GST, DCA, PGDCA, Photoshop, Canva Design, AI ChatGPT.\n\n📝 Direct Admission Form Available!\n📲 Admission ke liye call ya WhatsApp karein.\n`,
+                    text: `🎓 GURU COMPUTER EDUCATION INSTITUTE – Bilha, Bilaspur (C.G.)\n\n👩‍💼 Founder & Director: Nisha Jangde\n🎯 Trusted Computer Training Centre Since 2015\n\n📱 Main Contact: 92442 40484\n📍 Near Police Station, Dagori Road, Bilha, Bilaspur (C.G.)\n\nCourses: Basic Computer, MS Office, Typing, Internet & Email, Tally Prime GST, DCA, PGDCA, Photoshop, Canva Design, AI ChatGPT.\n\n📝 Direct Admission Info Available!\n📲 Admission ke liye call ya WhatsApp karein.\n`,
                     url: window.location.href
                 };
 
@@ -1240,8 +1240,8 @@ Our Courses:
 • CCC • DCA • PGDCA
 • Photoshop • Canva Design • AI ChatGPT
 
-📝 DIRECT ADMISSION FORM AVAILABLE!
-Click on "Admission Form" button to apply.
+📝 DIRECT ADMISSION INFO AVAILABLE!
+Click on "Admission Info" button to apply.
 
 Connect with us:
 Facebook: https://www.facebook.com/gceiofficial/
@@ -1265,3 +1265,4 @@ JustDial: https://jsdl.in/DT-99QYUEQ2AEE`;
     </script>
 </body>
 </html>
+
